@@ -29,14 +29,14 @@
   <div id="countdown">Loading...</div>
 
   <script>
-    const targetDate = new Date("2025-04-30T00:00:00Z");
+    const targetDate = new Date("2025-04-30T19:00:00Z");
 
     function updateCountdown() {
       const now = new Date();
       const diff = targetDate - now;
 
       if (diff <= 0) {
-        document.getElementById("countdown").textContent = "It's April 30!";
+        document.getElementById("countdown").textContent = "...";
         return;
       }
 
